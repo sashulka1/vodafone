@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+</head>
+<body>
+    <div>
+        <div>
+            <img src="https://www.legentas.com/images/featured/cilichili.cz.png" alt="logo">
+            <div class="menu">
+                <a href="index.html" class="menu">ChiliChili</a>
+                 Kontakt
+            </div>
+        </div>
+    </div>
+    <h1>Kontakt</h1>
+    <div>
+        <h3>Adresa</h3>
+        <p>
+            Ulice: 2020/15
+        </p>
+        <p>
+            Praha 13
+        </p>
+    </div>
+    <div>
+        <h3>Telefon</h3>
+        <p>
+            + 450 244 324
+        </p>
+    </div>
+    <div>
+        <h3>email</h3>
+        <p>idkidc.com</p>
+    </div>
+    <h2>Diskuse<span class="pocitatlo">(0) </span></h2>
+
+
+    <div style="display: none;">
+        Diky za zpravu
+    </div>
+    <form id="formular">
+
+        <div>
+            <label for="jmeno">Jmeno:</label>
+            <input type="text" id="jmeno">
+        </div>
+        <div>
+            <label>Dotaz
+                <input type="radio" name="typ" checked>
+            </label>
+            <label>Komentar
+                <input type="radio" name="typ" >
+            </label>
+        </div>
+        <div>
+            <label for="text">Text:</label>
+            <textarea id="text" placeholder="sem neco napis" rows="6" cols="40"></textarea>
+        </div>
+        <div>
+            <input type="submit" value="odeslat"  onclick="return odeslani()">
+
+        </div>
+        <div id="komentare">
+           Haloo
+        </div>
+    </form>
+    <script type="application/javascript">
+        i = 0;
+         function odeslani() {
+             i = 0;
+
+             jmeno = document.getElementById('jmeno').value;
+             text = document.getElementById('text').value;
+             pocitadlo = document.getElementById('pocitadlo');
+             komentare = document.getElementById('komentare');
+
+             document.getElementById('text').value = 'nejaky text';
+             komentar = '<div><b>' + jmeno + '</b> ' + text + '</div>';
+             document.getElementById('pocitadlo').innerHTML;
+
+             komentare.innerHTML += komentar;
+             pocitadlo.innerHTML = '<i>(' + (i++) + ')</i>';
+         }
+
+    if (jmeno.value=''){
+    alert('Vyplň jméno');
+    }
+    text.value='';
+
+
+    </script>
+    <div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1077.2467034604927!2d14.303644901908052!3d50.04622946025808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bbe08eb2cf95b%3A0xabc2251a76a36987!2sVodafone+Czech+Republic!5e0!3m2!1sen!2scz!4v1532353421777" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+</body>
+</html>

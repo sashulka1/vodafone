@@ -1,0 +1,54 @@
+*{
+    font-family: "Helvetica", serif;
+    color: black;
+    background: url("https://secure.img2-fg.wfcdn.com/im/44896032/resize-h600-w600%5Ecompr-r85/1902/1902870/Stainless+Steel+Cube+End+Table.jpg");
+
+}
+.menu a{
+    text-decoration: none;
+    color: #e60000;
+}
+
+h1{
+    border-top: #e60000 solid 2px;
+    border-bottom: #e60000 solid 2px;
+    background: #666666;
+}
+ul li {
+    display: inline;
+    font-size: 22px;
+
+}
+ul li:first-child{
+    background: url("../images/cilichili.cz.png") no-repeat;
+    padding-left: 60px;
+    background-size: 52px 25px;
+}
+
+#kosa {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    float: right;
+    font-size: medium;
+    font-family: Broadway, serif;
+}
+#kosa.p {
+    border-bottom: solid;
+    border-top: solid;
+    background-color: dimgrey;
+
+}
+img.kosa {
+    max-width: 100%;
+}
+.autor{
+    border-bottom: solid;
+}
+
+@media (max-width: 576px) {
+    p {
+        color: aqua;
+    }
+}
+
